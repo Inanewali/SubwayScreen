@@ -17,7 +17,7 @@ public class TrainStationDisplay extends JPanel {
     public TrainStationDisplay(String csvFilePath) {
         stations = loadStationNames(csvFilePath);
         currentStationIndex = 0; // Start with the first station
-        setPreferredSize(new Dimension(800, 100));
+        setPreferredSize(new Dimension(800, 400));
     }
 
     private List<String> loadStationNames(String csvFilePath) {
