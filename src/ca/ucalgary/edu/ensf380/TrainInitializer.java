@@ -1,4 +1,4 @@
-package ca.ucalgary.edu.ensf380.simulator;
+package ca.ucalgary.edu.ensf380;
 
 import java.util.ArrayList;
 import java.util.List;

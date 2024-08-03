@@ -1,9 +1,4 @@
-package ca.ucalgary.edu.ensf380.simulator;
-
-import ca.ucalgary.edu.ensf380.Advertisement;
-import ca.ucalgary.edu.ensf380.AdvertisementDAO;
-import ca.ucalgary.edu.ensf380.NewsFetcher;
-import ca.ucalgary.edu.ensf380.WeatherFetcher;
+package ca.ucalgary.edu.ensf380;
 
 import javax.swing.*;
 import java.awt.*;
@@ -16,7 +11,7 @@ import java.util.TimerTask;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class CombinedDisplay extends JFrame {
+public class CombinedDisplay extends JPanel {
     private List<Advertisement> advertisements;
     private JPanel adPanel;
     private JLabel adImageLabel;
@@ -82,8 +77,8 @@ public class CombinedDisplay extends JFrame {
 
         // Create the split pane for ads and simulation
         adNewsSplitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT, adPanel, stationDisplay);
-        adNewsSplitPane.setDividerLocation(400);
-        adNewsSplitPane.setResizeWeight(0.75); // More space to the ad and map display
+        adNewsSplitPane.setDividerLocation(300);
+        adNewsSplitPane.setResizeWeight(0.5); // Equal space for ad and station display
 
         JPanel newsPanel = new JPanel(new BorderLayout());
         newsPanel.add(breakingNewsLabel, BorderLayout.NORTH);
@@ -94,14 +89,11 @@ public class CombinedDisplay extends JFrame {
         mainSplitPane.setResizeWeight(0.2);
 
         JSplitPane newsSplitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT, mainSplitPane, newsPanel);
-        newsSplitPane.setDividerLocation(600); // Less space to the news panel
+        newsSplitPane.setDividerLocation(400); // Allocate sufficient space to the news panel
         newsSplitPane.setResizeWeight(0.8); // More weight to the mainSplitPane
 
         add(newsSplitPane, BorderLayout.CENTER);
 
-        setSize(1200, 800);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLocationRelativeTo(null);
 
         // Initialize simulation
         initializeSimulation();

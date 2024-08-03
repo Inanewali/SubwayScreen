@@ -1,6 +1,7 @@
-package ca.ucalgary.edu.ensf380.simulator;
+package ca.ucalgary.edu.ensf380;
 
 import javax.swing.*;
+
 import java.util.List;
 import java.util.Map;
 import java.util.Timer;
