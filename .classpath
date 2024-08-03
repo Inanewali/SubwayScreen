@@ -6,5 +6,16 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/14033/git/SubwayScreen/lib/mysql-connector-j-8.1.0.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/14033/git/SubwayScreen/lib/jsoup-1.18.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/14033/git/SubwayScreen/lib/JMapViewer-1.14.1-Demo.jar"/>
+	<classpathentry kind="lib" path="C:/Users/14033/git/SubwayScreen/lib/json-20240303.jar"/>
+	<classpathentry kind="lib" path="C:/Users/14033/git/SubwayScreen/lib/opencsv-5.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/14033/git/SubwayScreen/lib/commons-lang3-3.15.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/14033/git/SubwayScreen/lib/freetts.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
